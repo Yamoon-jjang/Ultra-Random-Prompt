@@ -1,0 +1,1446 @@
+﻿Ultra Random Prompt v8.0.0
+COMPLETE ENGLISH USER GUIDE
+Author: NiceMan
+Release: v8.0.0 KO/EN bilingual single-file HTML edition
+
+============================================================
+READ THIS FIRST
+============================================================
+
+Ultra Random Prompt primarily creates IMAGE-GENERATION PROMPT TEXT. It does not automatically generate an
+  image or video when you press the main Generate button.
+
+An optional, separately opened AI Image Preview window can request one actual preview image through a
+  third-party OpenAI or Gemini API, potentially incurring charges. Image Analysis is a separate feature
+  that describes an uploaded image as an English prompt through OpenAI, Gemini, or a local Ollama Vision
+  model.
+
+The interface language is independent of the prompt language: both KO and EN interfaces produce English
+  prompts. The original Korean identifiers used internally for pools, presets, and saved selections remain
+  unchanged to preserve compatibility.
+
+This application includes extensive adult/NSFW text-prompt options. Those existing adult options, presets,
+  and combinations are not silently disabled merely because the interface language is English. Use the
+  adult options responsibly and keep subjects clearly adult.
+
+Do not redistribute an HTML file containing a hard-coded API key. Service providers may bill for API
+  calls; a free API key does not necessarily make image generation free.
+
+============================================================
+TABLE OF CONTENTS
+============================================================
+
+01. What the application does
+02. Five-minute quick start
+03. KO / EN language selector
+04. Desktop and mobile layout
+05. Subject, Appearance, Scene, Style, and NSFW tabs
+06. Selection states and colors
+07. Regular click
+08. Ctrl / Command multi-selection
+09. Shift-click within a subcategory
+10. Fixed selection versus weighted pool
+11. Fill Unselected versus Full Random
+12. Compact categories and Show All
+13. Natural Language versus Tags
+14. Universal visual direction
+15. Natural-language length
+16. Number of results and regeneration
+17. Selection summary panel
+18. Live prompt preview
+19. Result list and individual controls
+20. Copy and translation
+21. Manual prompt editing
+22. Artist Input
+23. Preset selection
+24. Background Only mode
+25. Subject and age settings
+26. Gender and group composition
+27. Pose composition
+28. Appearance and clothing
+29. Scene, time, weather, and lighting
+30. Style, color, material, and rendering
+31. Framing, angle, and lens
+32. Adult/NSFW prompt options
+33. Custom prompts: display label, NL, and TAG
+34. Image Analysis overview
+35. Image Analysis: OpenAI
+36. Image Analysis: Gemini
+37. Image Analysis: Ollama Vision
+38. Image Analysis: custom instructions
+39. Optional AI Image Preview
+40. API keys, storage, and privacy
+41. API model configuration and compatibility
+42. Saved selections and restoration
+43. Reset controls and their differences
+44. Language persistence and saved settings
+45. Troubleshooting Ollama connections
+46. Troubleshooting API errors
+47. Working with pools and weighting
+48. Extending custom source data safely
+49. User self-check and troubleshooting checklist
+50. Practical examples and final notes
+
+EXTENDED FIELD REFERENCE
+A. Ready-to-use selection recipes
+B. A reliable everyday workflow
+C. Selection controls and random distribution
+D. Complete subject and appearance field guide
+E. Environment, lighting, and camera field guide
+F. Natural Language, Tags, and length
+G. Adult/NSFW text-prompt options
+H. Custom input and artist references
+I. Image Analysis in detail
+J. Optional Image Preview and API costs
+K. Saving, resetting, and moving between computers
+L. Preview editing, translation, and TXT export
+M. Troubleshooting field cases
+N. Extending the local HTML safely
+O. Quick reference and terminology
+
+============================================================
+01. WHAT THE APPLICATION DOES
+============================================================
+
+The left side lets you choose prompt ingredients: person, composition, age, appearance, clothing, pose,
+  environment, lighting, artistic style, and more. The right side assembles a coherent English prompt from
+  your choices.
+
+You can fix individual items, select a limited set of candidates, or ask the application to sample a
+  larger weighted pool. You can generate several alternative prompts with the same overall concept. The
+  application can also analyze an existing image and optionally preview a generated image via external
+  APIs.
+
+============================================================
+02. FIVE-MINUTE QUICK START
+============================================================
+
+1. Open Ultra_random_prompt_v8.0.0.html in a modern browser.
+2. Choose KO or EN in the header.
+3. In Subject, select the subject's adult age, gender, and number of people.
+4. Choose any preferred expression, hair, clothing, pose, or accessories.
+5. Choose a Scene and lighting, or leave those slots unselected.
+6. In Style, select a rendering method if you want one.
+7. Select Natural Language for general descriptive prompts or Tags for comma-separated tag prompts.
+8. Choose a Visual Direction: Auto / Neutral, Photorealistic, or Illustration / Anime.
+9. Choose Concise, Standard, or Detailed for natural-language output and set the number of results.
+10. Press Generate; copy a result into your preferred image workflow.
+
+Start with a few meaningful selections. Use Ctrl/Command candidates or Fill Unselected after you
+  understand the fixed-selection behavior.
+
+============================================================
+03. KO / EN LANGUAGE SELECTOR
+============================================================
+
+The two-button, dark rounded KO/EN switch sits in the title area on desktop. On narrow mobile screens, an
+  additional visible KO/EN switch is accessible without opening the sidebar.
+
+KO shows Korean interface text. EN presents the application's known labels, help content, tooltips, dialogs,
+  and supported dynamic status messages in English. The current choice is visibly highlighted.
+  Custom user text and original provider API error messages are intentionally preserved as received.
+
+The interface language is stored separately in the browser. Switching the interface does not change your
+  selections, prompt engine, artist names, API keys, or English output prompt. The language choice is not
+  a text-generation model selection.
+
+Important: Text that you personally entered or pasted is your own source content; the app does not
+  silently overwrite it merely to change its interface language.
+
+============================================================
+04. DESKTOP AND MOBILE LAYOUT
+============================================================
+
+Desktop: the left panel contains prompt options. The right panel contains output settings, the current
+  selection summary, preview, result list, and guide.
+
+Mobile: use the menu control to open the selection panel. Close the menu when you want to view your
+  generated prompts. Modals and long controls may scroll within their own areas.
+
+The KO/EN language selector remains accessible on mobile. The screen is designed for widths down to
+  approximately 320 px, but rendering can vary by browser, zoom level, and device fonts.
+
+============================================================
+05. MAIN TABS
+============================================================
+
+Subject: age, people, group composition, expression, gaze, role, action, pose, and related choices.
+Appearance: hair, skin, eyes, makeup, body proportions, clothing, footwear, and accessories.
+Scene: location, environment, weather, time, season, light, mood, and activities.
+Style: photography, illustration, painting, 3D, material treatment, camera angle, and framing.
+NSFW: adult-specific attire, exposure, pose, background, lighting, and curated adult presets.
+
+The right panel also contains quick guidance and preset-related information. You do not have to fill every
+  category.
+
+============================================================
+06. SELECTION STATES AND COLORS
+============================================================
+
+Unselected items are inactive and may be omitted from the output. A highlighted fixed choice represents a
+  deliberately selected item. Multiple candidates have a visible selection indicator; the generation
+  engine picks one of your candidates per result. A green dashed weighted-pool state tells the engine to
+  select from the corresponding pool. Disabled options are contextual and cannot be selected in the
+  current combination.
+
+A category badge can indicate how many of its children are selected; it does not necessarily mean that
+  every displayed item is fixed.
+
+============================================================
+07. REGULAR CLICK
+============================================================
+
+Regular clicking fixes an item. For example, clicking a particular background means the result should use
+  that setting. Clicking another item in the same single-choice slot replaces the previous fixed choice.
+  Clicking the active item again normally clears it.
+
+Use regular click for the details you really want to preserve.
+
+============================================================
+08. CTRL / COMMAND MULTI-SELECTION
+============================================================
+
+Hold Ctrl on Windows or Command on macOS while selecting several candidate items. Rather than including
+  all choices simultaneously, the generator samples from your chosen candidate set when it builds each
+  result.
+
+This is useful for exploring three expressions, several clothing combinations, or a small set of
+  acceptable backgrounds while keeping other slots fixed.
+
+Directly selected multi-candidates are equal-probability candidates rather than weighted by the full-pool
+  GROUP_BIAS or ITEM_BIAS settings.
+
+============================================================
+09. SHIFT-CLICK WITHIN A SUBCATEGORY
+============================================================
+
+Shift-click toggles the candidate set in the current compact subcategory. It does not select every item
+  from unrelated categories. Shift-click the same subcategory again to clear that candidate set.
+
+For example, in a clothing subcategory you can choose its members as candidates while leaving formalwear
+  and fantasywear alone.
+
+============================================================
+10. FIXED SELECTION VS WEIGHTED POOL
+============================================================
+
+Fixed item: use the same item each time.
+Multi-candidate set: choose among the items you selected, with equal probability.
+Weighted pool: sample from the complete eligible pool using the application's weighting rules.
+
+This distinction helps you balance control with variety. More variety does not necessarily mean better
+  coherence. Fixed lighting or framing often improves consistency between alternatives.
+
+============================================================
+11. FILL UNSELECTED VS FULL RANDOM
+============================================================
+
+Fill Unselected: preserve existing user choices while sampling suitable values for empty slots. Use it
+  when you have a concept but want the generator to help complete it.
+
+Full Random: rebuild a much broader set of choices from weighted pools. It may clear direct and multiple
+  selections. Use it to discover new combinations, not when you need a precise fixed concept.
+
+Background Only has special sampling behavior because a background is required even if you did not specify one.
+
+============================================================
+12. COMPACT CATEGORIES AND SHOW ALL
+============================================================
+
+Some large categories show representative entries by default. Switch to Show All or a subcategory to see
+  additional choices. The item counter shows availability or current selection count depending on the
+  control.
+
+Compact views are display filters. Hiding items in a compact view does not remove the underlying pool data
+  or delete saved selections.
+
+============================================================
+13. NATURAL LANGUAGE VS TAGS
+============================================================
+
+Natural Language: connected English sentences describing the subject, scene, style, and composition. This
+  is a good default for many modern image-generation models.
+
+Tags: concise, comma-separated English descriptors for tag-oriented workflows. Tag output is still
+  supported, but the app no longer asks you to select legacy SD, SDXL, Pony, ILXL, or other model-specific
+  prompt profiles.
+
+Changing the output format may re-render existing results using the same selections. Verify the content
+  before copying it to another tool.
+
+============================================================
+14. UNIVERSAL VISUAL DIRECTION
+============================================================
+
+Auto / Neutral: do not impose a default photoreal or anime look without a reason. Your explicitly selected
+  style still takes priority.
+
+Photorealistic: adds an overall photographic direction where appropriate.
+
+Illustration / Anime: adds an illustrated or animated rendering direction where appropriate.
+
+These are presentation directions, not model selectors. The app does not automatically load, install, or
+  configure a ComfyUI model.
+
+============================================================
+15. NATURAL-LANGUAGE LENGTH
+============================================================
+
+Concise: reduces redundant descriptive wording while aiming to preserve selected content and relationships.
+
+Standard: the balanced default.
+
+Detailed: adds concrete visual observations grounded in selected background depth, lighting, materials, skin, camera, and visual medium; it does not invent new people, actions, or settings.
+
+Length options affect natural-language output. They are not permission to discard user-selected clothing,
+  adult descriptors, poses, or scenes. Tags do not need to mimic sentence-length settings.
+
+============================================================
+16. NUMBER OF RESULTS AND REGENERATION
+============================================================
+
+Choose how many alternatives to generate, from one quick result to larger batches. The app generates text
+  locally; larger batches mean a longer list to inspect, but they are not external image-generation
+  requests.
+
+With multi-candidates and weighted pools, individual results may differ substantially. Use the resulting
+  list to select the best wording. If you change format or length, the output may update while preserving
+  the underlying selections.
+
+============================================================
+17. SELECTION SUMMARY PANEL
+============================================================
+
+The summary indicates currently fixed choices, candidates, and weighted pools. Some summary items can be
+  removed individually. Use this panel to check that an unintended choice was not left selected before
+  generating many results.
+
+The summary is a representation of the current selection state. It is not an independent second pool.
+
+============================================================
+18. LIVE PROMPT PREVIEW
+============================================================
+
+The preview shows one sample under the current settings. It can update as choices change. A preview and a
+  generated result list are related but are not required to show exactly the same random items.
+
+You can copy, inspect, or manually edit preview text using the available controls. An edited preview
+  should not be confused with a new permanent pool entry.
+
+============================================================
+19. RESULT LIST AND CONTROLS
+============================================================
+
+Generated results can be copied individually. Some result actions may open translation or optional
+  image-preview dialogs. The main Save button and Copy All controls depend on the current result list.
+
+A hover or focus action may reveal per-result controls on desktop. On mobile, check the visible controls
+  and the available menu area. The app is intended to preserve the original prompt when you change only
+  its interface language.
+
+============================================================
+20. COPY AND TRANSLATION
+============================================================
+
+Copy places the selected English prompt on the clipboard. Copy All handles multiple generated results.
+
+The built-in translation feature is intended to show an English prompt in Korean. In KO interface mode,
+  you can use the existing Korean translation flow. In EN mode the app displays an English explanation
+  rather than automatically calling the Korean translation service. Switch to KO if you want that
+  translation.
+
+The translation endpoint may depend on a third-party service and is not a guaranteed public API. A failed
+  translation should not delete or replace your source prompt.
+
+============================================================
+21. MANUAL PROMPT EDITING
+============================================================
+
+Use Edit to adjust preview text yourself, then choose Apply or Cancel. Applied manual text is your direct
+  editing work and must not be silently changed by a language switch. Cancel abandons the temporary edit.
+
+Manual editing is separate from modifying POOL entries or the program source. Confirm that you are editing
+  the intended preview rather than one of many generated results.
+
+============================================================
+22. ARTIST INPUT
+============================================================
+
+The Artist Input dialog adds an optional artistic reference layer at prompt-output time. Names can be
+  entered individually or in separated lists. Empty entries may be removed and additional rows can be
+  added.
+
+Weights may be entered for artistic influence. Natural-language output expresses that influence as a
+  descriptive reference rather than necessarily printing a numerical weight. Tag output may use
+  parenthesized weighted tag syntax.
+
+Artist input is not another random pool. Saved artist settings are restored with saved selection settings.
+  Clearing a session is different from clearing saved settings.
+
+============================================================
+23. PRESET SELECTION
+============================================================
+
+The app includes general presets and a separate set of adult/NSFW presets. Selecting a preset fills
+  related subject, composition, scene, or style options; further manual adjustment remains possible.
+
+Choose a starting point from the preset list, then adjust its options as needed. There is no separate
+  preset search box. Switching KO/EN does not change the preset's internal identity or saved selections.
+
+Adult presets are available in both KO and EN interface modes; changing the UI language does not filter or change the selected preset.
+
+============================================================
+24. BACKGROUND ONLY
+============================================================
+
+Background Only produces an environment-focused prompt without automatically adding a person. Useful
+  examples are a rainy neon alley, misty forest, quiet hotel lobby, futuristic city, or abandoned
+  landscape.
+
+Choose the background, time, weather, light, color, mood, rendering style, and camera distance.
+  Character-centered events are treated carefully so they do not force a subject back into an
+  environment-only description.
+
+============================================================
+25. SUBJECT AND AGE
+============================================================
+
+Choose an age range and subject role as needed. Adult age entries include an explicit 18–19 selection. The
+  engine should retain a precise adult age rather than replacing an exact 18 or 19 with ambiguous language
+  such as "in their teens".
+
+A clearly adult subject can be combined with adult styling and scenes. Treat age as a meaningful part of
+  the composition rather than a cosmetic label.
+
+============================================================
+26. GENDER AND GROUP COMPOSITION
+============================================================
+
+Choose Solo, Two People, Couple, or Small Group. Additional group settings allow different ages, genders,
+  and appearance origins for group members.
+
+Group settings determine participants and their descriptions; they do not create separate pose or clothing
+  controls for each participant unless a dedicated option exists. Check the preview for singular/plural
+  agreement and relationships between subjects.
+
+============================================================
+27. POSE COMPOSITION
+============================================================
+
+Pose Composition can combine compatible base and secondary posture choices. A fixed pose and an additive
+  candidate serve different roles, so their visual markers differ.
+
+Complex multi-pose combinations may be harder for an image model to follow than a clean single action.
+  Verify that a particular camera crop still reveals the part of the pose you care about.
+
+============================================================
+28. APPEARANCE AND CLOTHING
+============================================================
+
+Appearance options include hairstyle, hair length, bangs, eye expression, skin detail, makeup, body shape,
+  outfits, shoes, and accessories.
+
+Use a close-up when eye or facial details matter; use a three-quarter or full-body frame when complete
+  clothing, legs, or shoes matter. The engine attempts to reduce framing conflicts without deleting
+  explicitly chosen clothing and accessory information.
+
+============================================================
+29. SCENE, TIME, WEATHER, AND LIGHTING
+============================================================
+
+A background such as a night market should not receive automatically sampled bright midday light.
+  Time-of-day, weather, and lighting conditions interact.
+
+You may intentionally combine unusual elements, but when letting the application choose automatically, it
+  attempts to avoid obvious contradictions. Explicit user selections should not be overruled without a
+  specific conflict-handling reason.
+
+============================================================
+30. STYLE, COLOR, AND RENDERING
+============================================================
+
+Select photography, illustration, painting, sketch, watercolor, oil, 3D, or another desired medium. Color
+  palettes and surface textures can also be selected.
+
+A monochrome style with an automatically chosen vivid color palette may create a conflict; automatic
+  context adjustment attempts to make these choices more coherent. Explicit style choices remain the
+  primary visual direction.
+
+============================================================
+31. FRAMING, ANGLE, AND LENS
+============================================================
+
+Close-up and headshot favor the face. Medium and three-quarter framing offer more clothing and gesture
+  context. Full-body and wide shots provide more space for legs, footwear, and environment.
+
+Camera angles and lens suggestions add compositional guidance. Avoid requiring a tiny detail in a wide
+  shot unless you intentionally want a stylized compromise.
+
+============================================================
+32. ADULT/NSFW OPTIONS
+============================================================
+
+The NSFW tab is intended for adult text prompts. It includes existing categories for attire, lingerie,
+  nudity/exposure, posing, settings, light, and adult-oriented scene details. Its adult presets and data
+  catalog are available in both interface languages.
+
+The application is a prompt-writing tool: selecting adult NSFW prompt ingredients does not automatically
+  submit them to an image-generation API. Provider policy and output restrictions apply separately when
+  using optional image services.
+
+Adult students, university settings, campus scenes, and other explicitly adult contexts are not
+  categorically removed from the prompt catalog. Preserve the intended adult age and avoid ambiguous
+  changes to it. NSFW options can still conflict visually with ordinary clothing or framing; inspect the
+  final prompt rather than assuming every combination must work.
+
+============================================================
+33. CUSTOM INPUT: LABEL, NL, AND TAG
+============================================================
+
+A Custom group can have a display-label field, an English Natural Language prompt field, and a
+  comma-separated tag field. You can use custom text for subject, appearance, scene, style, or other
+  supported groups.
+
+For compatibility, the display label may also act as the existing internal Korean source key. Do not
+  rename a stored internal identifier just because the interface is set to EN. User-provided Korean text
+  is preserved and is not a UI translation defect.
+
+Custom text can override a group's regular POOL choices. Remove or clear the custom field if you want
+  normal POOL selection to apply again.
+
+============================================================
+34. IMAGE ANALYSIS OVERVIEW
+============================================================
+
+Image Analysis opens an independent dialog. Upload a supported image, choose OpenAI, Gemini, or Ollama
+  Vision, optionally enter an analysis instruction, and ask for one English image-generation prompt
+  describing the reference.
+
+The analysis result is not automatically inserted into the main random prompt list. The uploaded image and
+  result are temporary session content unless you explicitly copy them.
+
+It is not a video-analysis pipeline and does not itself generate an image.
+
+============================================================
+35. IMAGE ANALYSIS: OPENAI
+============================================================
+
+The analysis model in this build is gpt-5.4-mini. An OpenAI API key with appropriate access and billing or
+  available credits is required.
+
+The app sends image content and instruction text to OpenAI through its configured API endpoint. A network
+  error, invalid key, restricted model, or exhausted quota can prevent a result.
+
+The model used for image analysis is distinct from the optional GPT Image 2 image-preview model.
+
+============================================================
+36. IMAGE ANALYSIS: GEMINI
+============================================================
+
+The analysis model in this build is gemini-3.1-flash-lite. Use a valid Gemini API key. Availability,
+  quotas, and free/paid tiers vary by project and Google account.
+
+This feature requests a textual interpretation of an uploaded image. It is not the same as Gemini 3.1
+  Flash Lite Image, which is the optional image-preview model.
+
+If the provider declines a request or has a transient quota error, inspect the returned message. Do not
+  assume the app has corrupted the selected prompt.
+
+============================================================
+37. IMAGE ANALYSIS: OLLAMA VISION
+============================================================
+
+Ollama runs on your own machine or an explicitly configured server and does not require an OpenAI/Gemini
+  API key. The default endpoint is http://localhost:11434.
+
+The application first checks /api/tags for installed models and then uses /api/show capabilities
+  information to identify Vision support when possible. Merely having an Ollama model installed does not
+  mean it can accept images.
+
+Select a model whose capabilities include vision. Models advertising only completion, tools, and thinking
+  cannot be assumed to support image input. Some filenames resemble Vision models but the actual installed
+  file may still be text-only.
+
+The image-analysis prompt instructs the model to return an English image-generation description. Results
+  depend on the model's visual and language capabilities.
+
+============================================================
+38. IMAGE ANALYSIS: CUSTOM INSTRUCTIONS
+============================================================
+
+Custom instructions may be written in Korean or English. For example, "Focus on lighting and the
+  surrounding architecture" or "Describe the fabric texture and pose in greater detail."
+
+The final analysis prompt is intended to be English in both KO and EN interface modes. Use instructions to
+  change the descriptive emphasis, not to confuse source-image analysis with unrelated scene generation.
+
+Your instructions are passed to the selected provider as part of the analysis request; avoid including
+  private information in remote API prompts.
+
+============================================================
+39. OPTIONAL AI IMAGE PREVIEW
+============================================================
+
+From a prompt preview or generated result, choose the AI image action to open an optional image-preview
+  dialog. Select the provider, supply a valid key if required, and explicitly start generation.
+
+This build uses OpenAI gpt-image-2 (GPT Image 2) or Google gemini-3.1-flash-lite-image for image previews,
+  requesting one image at a time. Neither model has a free API tier: Gemini requires a billing-enabled
+  API project, and OpenAI API billing is separate from ChatGPT subscriptions. Each request can incur
+  charges. Ollama is not offered as a local image-generation provider here.
+
+If Gemini reports `generate_content_free_tier_requests` with `limit: 0`, free-tier image requests
+  are unavailable for that project; waiting or rewording the prompt will not fix this. Expand
+  "View Original API Error" to inspect the unmodified provider response in either UI language.
+
+The optional preview should not be confused with the main text generation button. Closing the preview or
+  encountering a provider error must not destroy the original prompt.
+
+============================================================
+40. API KEYS, STORAGE, AND PRIVACY
+============================================================
+
+API keys for OpenAI and Gemini can be used temporarily or stored via the app's key controls. Stored keys
+  live in browser localStorage within the applicable browser/origin context; this is not a remote password
+  vault.
+
+Do not store keys on a public computer. Do not publish HTML source containing hardcoded keys. If you
+  rotate a key, clear the old stored value using the corresponding provider's key-management control.
+
+Selection reset does not automatically remove API keys. Ollama uses its local server and normally needs no
+  key in this app.
+
+============================================================
+41. API MODEL CONFIGURATION
+============================================================
+
+The configured model identifiers are implementation details that may change with provider availability. In
+  this version:
+- OpenAI image analysis: gpt-5.4-mini
+- Gemini image analysis: gemini-3.1-flash-lite
+- OpenAI optional image preview: gpt-image-2
+- Gemini optional image preview: gemini-3.1-flash-lite-image
+- Ollama image analysis: selected installed Vision-capable model
+
+If you edit a model ID manually, also check its endpoint, accepted parameters, response structure, safety
+  handling, image payload, and costs. Replacing only the model name is not always sufficient.
+
+============================================================
+42. SAVED SELECTIONS
+============================================================
+
+Use Save Settings or Update Settings to remember your chosen options: fixed items, multi-candidates,
+  weighted pools, custom inputs, artist settings, output format, visual direction, prompt length, result
+  count, and supported view state.
+
+When opened in a compatible browser context, the app attempts to restore previously saved settings
+  automatically. Compatible saved-selection entries can be restored under the existing storage schema.
+  Saved settings and the KO/EN language preference are separate records.
+
+============================================================
+43. RESET CONTROLS
+============================================================
+
+Bottom Reset: resets the current working view to your stored settings if a saved selection exists,
+  otherwise to application defaults. It clears generated results and temporary analysis content without
+  deleting saved selection settings or stored API keys.
+
+Top Reset Saved Settings: clears the stored selection configuration and returns to default selections. It
+  is not the same as deleting OpenAI/Gemini API keys.
+
+If you intend to preserve a carefully customized set of options, use Save Settings before experimenting,
+  and distinguish between the two reset buttons.
+
+============================================================
+44. LANGUAGE PERSISTENCE AND OLD SETTINGS
+============================================================
+
+The language selector is stored under its own browser key. On opening the app, the last KO/EN choice is
+  restored when that storage context is available.
+
+The saved-selection schema has not been reset simply to introduce bilingual UI. The app continues to use
+  Korean internal pool identifiers, even though EN shows English labels. This prevents user options from
+  changing when switching languages.
+
+Changing file location or browser settings may make the old localStorage context unavailable. That does
+  not mean your selection fields were deliberately removed.
+
+============================================================
+45. TROUBLESHOOTING OLLAMA
+============================================================
+
+First, on the same computer as the browser, open http://localhost:11434/api/tags. If JSON appears, the API
+  is responding in that browser. If the app still cannot access it, examine F12 Console for CORS,
+  local-network permissions, or mixed-content errors.
+
+After reinstalling an operating system, a missing permitted origin may cause a browser request to fail
+  even when the server is running. OLLAMA_ORIGINS=* may resolve a confirmed CORS issue, but it allows any
+  origin; prefer the specific application origin when practical and avoid exposing port 11434 to the
+  public internet.
+
+If Ollama is on another machine, localhost points to the browser machine, not the remote server. A valid
+  server address and appropriate network setup would be required.
+
+If the server connects but no model offers vision, install or select a genuinely Vision-capable model.
+  CORS settings cannot add Vision capabilities to a text-only GGUF.
+
+============================================================
+46. TROUBLESHOOTING OPENAI AND GEMINI
+============================================================
+
+401 or 403: key, account permission, or model access issue.
+429: quota, rate limit, or billing restriction.
+400: unsupported parameter, model ID, or invalid image content.
+Timeout / Failed to fetch: browser/network, endpoint, or service availability issue.
+No image in response: provider may have returned a refusal, non-image response, or a different response
+  structure.
+
+Check the exact error message before replacing model IDs or deleting stored keys. Analysis and image
+  preview are separate functions and may have different quota and billing conditions.
+
+============================================================
+47. POOLS AND WEIGHTING
+============================================================
+
+POOL entries are building blocks containing a display label, natural-language text, tag text, and optional
+  metadata. The generator uses selection state and pool weighting rather than always choosing each value
+  uniformly.
+
+GROUP_BIAS and ITEM_BIAS affect weighted full-pool randomization. User-selected multi-candidate items are
+  sampled equally within the selected set. This is why the distribution of Full Random may look different
+  from the distribution of a carefully restricted candidate set.
+
+Many possible outputs can be unique while certain weighted categories are deliberately more common. Use
+  the selection controls to tune that balance.
+
+============================================================
+48. SAFE SOURCE EXTENSIONS
+============================================================
+
+Always back up the original HTML before editing POOL entries or JavaScript. Use a proper UTF-8 editor and
+  follow the actual object structure rather than copying arbitrary text into a script.
+
+Preserve internal Korean keys referenced by saved selections. Add corresponding English display entries in
+  the v8 language layer when introducing new visible terms or help messages.
+
+Do not rename DOM IDs or handler functions unless all dependent callbacks are updated. Validate syntax,
+  saved-state restoration, and at least one normal, background-only, adult, and custom scenario after any
+  change.
+
+============================================================
+49. USER SELF-CHECK AND TROUBLESHOOTING CHECKLIST
+============================================================
+
+[ ] KO and EN toggle in desktop and mobile layouts
+[ ] EN UI has no unintended Korean interface characters in labels, dialogs, tooltips, and dynamic status
+  messages
+[ ] Return to KO restores meaningful Korean labels rather than breaking saved selections
+[ ] Fixed, multi-candidate, Shift-click, and weighted pool behaviors are distinct
+[ ] Natural Language and Tags both produce nonempty outputs
+[ ] Visual direction and prompt length do not drop selected content
+[ ] Normal, adult/NSFW, and Background Only scenarios produce plausible English prompts
+[ ] Adult NSFW data and presets are not arbitrarily reduced during translation
+[ ] Age 18 or 19 remains explicit when selected
+[ ] Saved and restored settings work; keys survive selection reset
+[ ] Manual edits survive language switching without content changes
+[ ] Artist input, preset selection, preview, result copy, and translation guidance function
+[ ] OpenAI, Gemini, and Ollama analysis show useful errors and outputs
+[ ] Image preview is opt-in and clearly separate from main text generation
+[ ] Mobile panels, popups, and generated lists fit small screens
+
+============================================================
+50. PRACTICAL EXAMPLES AND FINAL NOTES
+============================================================
+
+Portrait: choose one adult subject, a neutral expression, a photographic style, soft studio lighting, and
+  a medium or headshot frame. Use Natural Language and Standard length.
+
+Stylized illustration: choose an adult subject, expressive pose, illustrated rendering, and a matching
+  palette. Choose Illustration / Anime as the broad visual direction, or explicitly select a more precise
+  style.
+
+Environment only: activate Background Only, select a rainy night city setting, reflections, neon light,
+  and a wide frame. Leave subject controls unused.
+
+Adult content prompt: keep age clearly adult, choose the adult NSFW components you intend, and review
+  attire, exposure, background, composition, and consistency. The app does not automatically strip these
+  adult prompt choices merely because the screen is in English.
+
+Reference-image analysis: open Image Analysis, choose an available provider and key or a supported Ollama
+  Vision model, upload a reference picture, optionally enter your description priorities, and copy the
+  English output.
+
+For all scenarios: the application generates prompt text. Evaluate final image/video results using your
+  own compatible model and workflow. Actual results depend on the external model's training, prompting
+  expectations, safety systems, and generation settings.
+
+============================================================
+END OF MAIN GUIDE — EXTENDED REFERENCE FOLLOWS
+============================================================
+
+
+============================================================
+EXTENDED FIELD REFERENCE — PRACTICAL ENGLISH GUIDE
+============================================================
+The sections below expand the quick reference into complete workflows. You can read them independently.
+  They describe the same functions accessible in either interface language.
+
+============================================================
+APPENDIX A. READY-TO-USE SELECTION RECIPES
+============================================================
+
+A1. Clean studio portrait
+Choose a single adult subject; explicitly set the age group and appearance when identity matters. Fix a
+  calm or subtle smile, camera-facing gaze, studio environment, softbox or balanced studio light, medium
+  or head-and-shoulders framing, and an appropriate portrait lens such as 85 mm. Start with Natural
+  Language / Photorealistic / Standard. If you want variations without changing the person's concept,
+  Ctrl/Command-select two to four expressions or clothing options, then generate 10–30 results. The fixed
+  subject and framing remain anchors while the selected candidates vary.
+
+A2. Rainy neon street fashion
+Use a city-street background, evening or night, wet pavement, neon light, and a three-quarter or full-body
+  composition. A 35 mm look gives space to the city environment. Fix the location and lighting, but place
+  several permissible streetwear items into the clothing candidate set. When using a full-body frame,
+  footwear can be a meaningful component; in a face close-up it is less useful. Compare Natural Language /
+  Standard with Tags to choose the format best suited to your downstream workflow.
+
+A3. Character illustration
+Choose Illustration / Anime and a matching rendering style from the Style panel. Fix the subject and the
+  distinctive design features, such as hair silhouette, eye color, costume, or an accessory. Let
+  expression and posture vary inside a small selected candidate set. Use a medium shot if the expression
+  and outfit both matter; choose a wider frame to show the whole design. Tag output can be useful in
+  tag-oriented pipelines, but review its actual tags rather than assuming the app generates a specific
+  model's specialized score vocabulary.
+
+A4. Painterly watercolor portrait
+Choose watercolor or another painting medium explicitly. Combine soft diffuse light, gentle colors, modest
+  texture, and a clear half-body or medium framing. If you select high-contrast photorealistic sharpness
+  as well, the result may describe competing visual treatments. Prefer choosing one leading visual medium.
+  Detailed length can expand descriptions of pigment, paper texture, lighting, and space where those
+  concepts already belong to the selected design.
+
+A5. Luxury interior without a subject
+Turn on Background Only before choosing an interior such as a lobby, gallery, conservatory, or suite. Fix
+  a warm lighting direction and one mood. A wide environmental shot and 24–35 mm appearance can describe
+  the architecture. Do not add person-specific expressions, clothing, or poses. The prompt can still vary
+  through materials, spatial depth, color treatment, or carefully selected environmental elements.
+
+A6. Nighttime cinematic portrait
+Fix a clearly adult subject, nighttime environment, low-key or rim lighting, and a restrained palette. Let
+  a few poses or camera framings vary. If you want a silhouette, favor backlight and a broad enough frame
+  to show the outline. If the main framing is a headshot, do not expect leg or footwear detail to be
+  visible even when it is present in the underlying selection set.
+
+A7. Mature portrait and mixed-age group
+For mature subjects, choose an exact age or suitable age range rather than relying on a generic appearance
+  adjective. In a group, the subject-count and gender composition change sentence grammar. Use the
+  advanced male/female/group fields when you need different ages or cultural appearance descriptions for
+  participants. Review any relationship or action terms against the number of people selected.
+
+A8. Adult NSFW text prompt
+Use clearly adult subjects and deliberate adult options for attire, exposure, poses, scene, and lighting.
+  The application preserves the installed adult category data and your explicit choices; it does not block
+  adult terms just because the UI is in English. For varied results with a steady concept, hold the main
+  subject/count and desired exposure range fixed, then randomize compatible secondary elements. Check that
+  the chosen pose, number of participants, and intended framing describe one coherent scene.
+
+============================================================
+APPENDIX B. A RELIABLE EVERYDAY WORKFLOW
+============================================================
+
+B1. Start with the image's essential statement.
+Before filling every slot, describe what the finished image should show. A useful internal plan contains:
+  who or what is present, what they are doing, where they are, how much of the subject is visible, and the
+  leading visual style. Fix those points with ordinary clicks. Leave secondary decisions unselected until
+  the concept is stable.
+
+B2. Separate fixed requirements from permitted variation.
+Use ordinary click for requirements. Use Ctrl/Command multi-select for a short whitelist of acceptable
+  alternatives. Use a weighted pool when you want the application to draw from a broader category. Avoid
+  setting every available category to a weighted pool unless broad combinations are precisely what you
+  want to explore.
+
+B3. Decide whether to Fill Unselected or Full Random.
+Fill Unselected preserves the current anchors and tries to populate otherwise empty choices. Full Random
+  is intended for broad exploration and can replace more of the current configuration. Both can be useful,
+  but they serve different purposes. After either operation, inspect the selection summary to see which
+  choices became fixed and which became pools.
+
+B4. Generate and evaluate a batch.
+Choose between one and 100 results. For everyday comparison, 5–10 is manageable; 30 can reveal more
+  distinct directions. A preset is not meant to produce one fixed sentence repeated many times. Its fixed
+  concept remains, while open random axes produce alternatives. Batch duplicate avoidance reduces repeated
+  choices but cannot create meaningful diversity when every major option is explicitly fixed.
+
+B5. Refine the result without losing the concept.
+Copy a promising output or edit its preview text. Format/length/direction are separate from the underlying
+  selected items. A manual Natural Language draft is not automatically a corresponding manual Tag draft.
+  When switching formats, the application retains edits under their original formats; in the other format
+  it may show output rebuilt from the underlying generated selection.
+
+B6. Save settings deliberately.
+Save a useful working configuration before exploring a completely different idea. Bottom Reset returns to
+  the saved configuration if one exists; Reset Saved Settings clears that stored configuration after
+  confirmation. Generated prompts and temporary image-analysis content are not the same as saved choices.
+  API keys are controlled separately from selection settings.
+
+============================================================
+APPENDIX C. SELECTION CONTROLS AND RANDOM DISTRIBUTION
+============================================================
+
+C1. One item versus a set of alternatives.
+A fixed option normally occupies one slot. Ctrl/Command-click adds or removes candidate items within that
+  slot. The app selects one of the candidates per generated result, not all of them at the same time. When
+  a slot has no active item, that topic may not appear in the resulting prompt; using Fill Unselected can
+  populate many such slots.
+
+C2. Why candidate weights behave differently.
+An explicitly chosen set of multi-candidates is sampled at item level. Its members are intended to be
+  equal-probability choices. A full weighted pool instead uses the application's group/item weighting.
+  Thus a pool with many available items may prefer some categories even when many unique combinations
+  remain possible. A count of unique prompts alone does not prove an even distribution across categories.
+
+C3. What Shift actually selects.
+Shift works with the current compact subcategory, not every item in the entire application. If you are
+  viewing a clothing subsection, Shift can turn that subsection's entries into candidates without touching
+  unrelated categories. Repeat the gesture to clear those candidates. Changing a category's visible
+  Representative/All view is not itself the same action as selecting its entire pool.
+
+C4. Keyboard equivalence.
+Use Tab to reach a selectable chip. Enter/Space performs a normal selection; Ctrl/Command+Enter/Space adds
+  or removes one candidate; Shift+Enter/Space toggles the current compact-subcategory set. Existing
+  pointer gestures continue to work. The visual state and current selection summary should confirm what
+  you did; do not rely only on a color if a text or state indication is available.
+
+C5. Why the same preset can look different.
+Presets configure a mixture of fixed anchors and random axes. Each Generate action samples anew. A batch
+  may vary in scene detail, lighting, poses, clothes, style-compatible backgrounds, or wording. The app
+  tries to avoid repeated sentences and major combinations within a batch by retrying a limited number of
+  times, but a highly constrained preset offers fewer distinct alternatives.
+
+C6. Keeping a chosen style across randomization.
+The visual-direction control influences automatically selected styles: Neutral, Photorealistic, or
+  Illustration/Anime. A user-fixed style remains a direct selection even when it differs from the broad
+  direction. Changing direction can re-evaluate auto-selected style pools, but should not silently erase
+  explicit style decisions. Review the actual selection panel after switching when precise visual
+  treatment matters.
+
+============================================================
+APPENDIX D. COMPLETE SUBJECT AND APPEARANCE FIELD GUIDE
+============================================================
+
+Age and subject identity
+Age changes how a subject is described, not merely the words in the UI. When you require a precise adult
+  age, choose an appropriate explicit value. Ages 18 and 19 should remain explicit rather than turning
+  into vague wording about teenagers. Broader decades can produce age variation inside that interval; a
+  tooltip may display an illustrative phrase rather than every possible age.
+
+Gender and participant count
+A single man, a single woman, a couple, several women, several men, and a mixed group are not
+  interchangeable text subjects. Choose participant count first when it matters to the scene. The group
+  detail panel lets you refine male/female ages and background where those controls are available. A mixed
+  group does not necessarily mean exactly one man and one woman, so review group composition and the
+  matching action.
+
+Ethnic or regional description
+Nationality, ethnicity, and regional appearance labels are optional image-prompt descriptors. Use the
+  terms that describe your intended subject, and do not stack incompatible labels merely to increase
+  detail. A selected appearance label is different from the image model's actual ability to depict that
+  label. If the appearance is not central, leave the slot unselected.
+
+Face, expression, and gaze
+Expression and gaze strongly influence a headshot or portrait. Use a few alternatives for smile, serious,
+  shy, or calm expressions; make camera-facing gaze a fixed requirement only when you want direct eye
+  contact. A blindfold, back-facing pose, or strict side profile can make automatic viewer gaze
+  inappropriate. Explicit user choices are still respected, so check intentional combinations yourself.
+
+Hair and facial detail
+Hair length, texture, style, color, and bangs are separate controls. Choose a few essential
+  characteristics rather than filling every available hair-related slot automatically. Skin texture and
+  makeup have the most visible effect in portraits; in distant full-body compositions, the model may give
+  those details less attention.
+
+Clothing, footwear, and accessories
+Clothing strongly contributes to identity, social context, and style. A medium or full-body composition is
+  generally needed to display the outfit fully. Footwear mainly matters in full-body/fashion shots; heavy
+  footwear details in a face crop often create unwanted prompt density. Small accessories such as
+  earrings, necklaces, or glasses can remain meaningful in close portraits, while bags and outerwear need
+  a broader field of view.
+
+Hands and gesture
+Hand gestures and held objects should be compatible with the subject's main activity. A gesture can be
+  visually unimportant in a very wide scene, while a complicated hand pose near the face can dominate the
+  composition. If gestures conflict with actions, fix the more important one and leave the secondary
+  gesture open.
+
+Pose composition
+Some pose combinations are compatible and can be composed into a richer description. Others cannot be
+  combined naturally and must be sampled or adjusted. The setting 'allow pose combination' affects
+  automatic generation; it is not a promise that every logically incompatible action can occur
+  simultaneously.
+
+============================================================
+APPENDIX E. ENVIRONMENT, LIGHTING, AND CAMERA FIELD GUIDE
+============================================================
+
+E1. Location
+A scene background is the place in which the composition is staged: studio, cafe, hotel, city street,
+  forest, shore, fantasy interior, futuristic city, and many more. The environment defines plausible props
+  and background depth. If the location is crucial, fix it before experimenting with weather or time.
+
+E2. Time of day
+Morning, noon, golden hour, blue hour, twilight, and nighttime influence the available light. A place
+  explicitly described as a night market or after-dark street should not be paired automatically with
+  bright midday sunlight. If you manually select competing conditions, the resulting prompt may still
+  carry both; review direct contradictions rather than expecting the application to override your explicit
+  idea.
+
+E3. Weather and season
+Rain, snow, fog, clear skies, and seasonal detail influence outdoor atmosphere. Indoors, a weather phrase
+  may need a visible window or exterior connection to be meaningful. Weather is not an obligatory element
+  of every prompt. Use it when it contributes to the image rather than filling it as a habit.
+
+E4. Lighting
+Softbox, diffuse daylight, rim light, harsh direct sun, candlelight, neon, and flash produce different
+  visual conditions. Lighting can be the strongest ingredient after subject and composition. Choose one
+  dominant light mechanism and add secondary effects only when they are compatible. Detailed length can
+  add richer observations of light falloff and material response without changing the chosen source.
+
+E5. Mood and palette
+Mood tells the image what atmosphere to convey: calm, tense, luxurious, mysterious, cinematic, nostalgic,
+  and so forth. Palette describes the visual color treatment. Monochrome and strongly saturated palettes
+  may compete; a consistent palette is usually easier to depict. However, a deliberate colored accent
+  inside an otherwise monochrome image can be a meaningful intentional exception.
+
+E6. Style and rendering medium
+Photography, anime illustration, watercolor, oil paint, pencil, ink, and 3D rendering each imply different
+  visual treatment. Directly selecting a rendering style is a firmer instruction than leaving the field to
+  the visual-direction default. Avoid imposing photographic lens and skin microtexture language on a
+  heavily stylized flat illustration unless that combination is intentional.
+
+E7. Framing
+Face close-up shows facial details; headshot frames head and shoulders; medium shows torso and some
+  gesture; three-quarter displays more of the outfit; full-body shows the subject head to toe;
+  environmental wide shot emphasizes surrounding space. Choose framing in relation to the detail you need
+  to see.
+
+E8. Angle and lens
+Eye-level, low, high, profile, or back-facing angles alter the viewpoint. Common lens choices such as 24,
+  35, 50, 85, or 135 mm suggest different perspectives, but text prompts do not enforce literal camera
+  optics in every generator. Use these terms as descriptive guidance rather than strict photographic
+  guarantees.
+
+E9. Events and interactions
+An event adds story: walking through rain, attending a party, shopping, taking a break, looking at a
+  scene, or performing a particular activity. Events and gestures can conflict if too many independently
+  generated activities are selected. A coherent event typically benefits from one central action,
+  supported by a compatible pose and location.
+
+============================================================
+APPENDIX F. NATURAL LANGUAGE, TAGS, AND LENGTH
+============================================================
+
+F1. Natural Language (NL)
+Natural Language combines resolved choices into connected English sentences. It works as a general
+  descriptive format for a range of image-generation workflows, including models that handle
+  instruction-like scene descriptions. The app is not aware of the exact ComfyUI graph you will use, so it
+  cannot guarantee that a particular model obeys every phrase in the same way.
+
+F2. Tags
+Tag output is generally comma-separated. It may be convenient in SDXL/Pony/Anima or related tag-oriented
+  workflows. Tags are not identical to the underlying model tokenizer's token count: a comma-separated
+  list of 60 tags is not automatically the same as 60 CLIP tokens. Examine the actual model and
+  conditioning node if context limits matter.
+
+F3. Neutral, Photorealistic, Illustration/Anime
+The direction control gives automatic style selection a broad preference. It does not install model
+  profiles or inject a provider-specific API prompt. A fixed watercolor style can still override a
+  Photorealistic default; that is an explicit user choice, not a failure to randomize.
+
+F4. Concise
+Concise reduces generic automatically generated connective or editorial wording where possible. It does
+  not delete explicitly selected adults, attire, actions, custom wording, important objects, or locations
+  merely to hit an arbitrary length target. Because the content choices may be numerous, a Concise prompt
+  can still be long.
+
+F5. Standard
+Standard is the regular level of descriptive detail. It should remain steady when you switch to another
+  length and then back: the app reuses cached source drafts for existing results rather than silently
+  drawing an entirely different combination every time a display control changes.
+
+F6. Detailed
+Detailed expands observable visual facts grounded in selected settings, such as background depth, light
+  direction, material texture, natural skin shading, camera distance, and visual medium. It is not a magic
+  quality switch and does not create new subjects or actions. If the underlying selection contains very
+  little visual context, Detailed has less specific material to elaborate on.
+
+F7. When too much text is counterproductive
+A very long prompt can mix competing styles or dilute the central subject. If a result seems
+  over-specified, reduce the number of automatically populated slots before blaming the length option.
+  Choose one essential concept, one visual medium, and a manageable environment, then add detail
+  deliberately.
+
+F8. Comparing two output forms
+The natural-language and tag outputs describe the same resolved selection but may not repeat every
+  automatic secondary detail with identical wording or density. User-fixed details should remain a
+  priority. Compare the actual outputs if a particular material, period, or action is indispensable to
+  your downstream workflow.
+
+============================================================
+APPENDIX G. ADULT/NSFW TEXT-PROMPT OPTIONS
+============================================================
+
+G1. Scope
+The adult tab provides text-prompt ingredients for adult subjects. It includes categories such as
+  clothing, exposure, pose, activity, background, lighting, and adult presets. It does not itself make
+  images. Switching between KO and EN only changes interface presentation; it does not delete the adult
+  pool or substitute a censored data set.
+
+G2. Participant consistency
+A solo scene and an interaction involving multiple people require different actions and grammatical
+  subjects. Automatic sampling attempts to choose compatible expressions; custom or explicitly fixed
+  selections remain under the user's control. Check number of participants, pronouns, and who is doing
+  what in the final prompt.
+
+G3. Clothing and exposure
+Some combinations are intentionally unusual. Others create obvious contradictions, such as a fully nude
+  composition that automatically acquires a heavy coat and shoes. The generator applies selected automatic
+  compatibility rules while preserving explicit items, so review the output if you deliberately combine
+  unusual attire and exposure.
+
+G4. Presets and open variation
+Adult presets anchor a particular kind of adult scene but retain multiple random axes. They are not stored
+  as single static prompts. The app can generate the requested number of alternatives by sampling
+  compatible choices, and the diversity increases when there are several unpinned candidate categories.
+
+G5. Age precision
+Keep subjects clearly adult. An explicitly selected age of 18 or 19 is represented as that age rather than
+  through ambiguous wording. Do not rely on an unselected age field to express a particular adult age.
+  Preset names or location terms alone do not establish a person's age.
+
+G6. Reviewing outputs
+Check language consistency, participant count, visual framing, the dominant activity, and whether a chosen
+  prop actually makes sense in the scene. Adult vocabulary should not be silently removed during length
+  shortening, display translation, or choice randomization. If you need a precise scenario, fix the
+  primary adult choices and allow fewer auxiliary random axes.
+
+============================================================
+APPENDIX H. CUSTOM INPUT AND ARTIST REFERENCES
+============================================================
+
+H1. Custom labels versus generated English content
+A custom-entry interface may ask for a display label plus Natural Language and Tag text. The display label
+  identifies the option for selection, while the NL/TAG fields control generated output. Do not use the
+  display label as a substitute for an English prompt phrase. For example, a Korean description can be the
+  label while the NL contains a complete English depiction.
+
+H2. Preserve the user's source material
+When using EN interface mode, user-entered Korean, Japanese, Chinese, or mixed-language text is not
+  automatically a UI defect. It is source material. The bilingual presentation layer should not overwrite
+  it or replace it with a generic 'information' message. If you want an English output, write or translate
+  the NL/TAG fields deliberately.
+
+H3. Artist Input
+Artist Input opens a separate editor for names and optional weights. You can use separate rows or
+  comma/semicolon/newline-separated names. Apply updates the list without automatically closing the
+  editor; Add Artist creates another entry; Clear All removes the artist list while keeping the editor
+  open; Close exits the window.
+
+H4. Artist weights and output formats
+In Tags, artist names can be emitted as ordinary tags, sometimes with parenthetical numerical weights such
+  as (Artist Name:1.2). In Natural Language, the app instead describes the artist as a visual style
+  reference; numerical weights are not necessarily printed literally. Mixing multiple weights may compress
+  their relative influence into one combined instruction, so verify the output if exact per-artist
+  emphasis is critical.
+
+H5. Artists in Background Only mode
+Style references can be useful for a landscape, architecture, or environment even without a person. The
+  generated language should refer to the described environment rather than inventing a subject. If you
+  only enter an artist without selecting an actual scene or subject, the app may still consider the prompt
+  selections empty.
+
+H6. Saved artist settings
+Artist lists participate in saved selection settings. Bottom Reset uses stored settings when available
+  rather than necessarily deleting the artist list. Reset Saved Settings clears the stored selection
+  configuration including those artist choices, while provider API keys remain separately managed.
+
+============================================================
+APPENDIX I. IMAGE ANALYSIS IN DETAIL
+============================================================
+
+I1. What analysis does
+Image Analysis examines an uploaded source picture and asks a provider to express visual content as an
+  English image-generation prompt. It is separate from the main selection pools and does not automatically
+  overwrite your main result list. The result can be copied, translated, or used elsewhere.
+
+I2. Provider selection
+OpenAI and Gemini require corresponding API access and may incur charges. Ollama Vision connects to your
+  local server and requires a genuinely multimodal installed model. Models that can only complete text
+  cannot analyze pictures merely because their names contain a suggestive keyword.
+
+I3. Image input
+Choose a supported file such as PNG, JPEG, or WEBP. The app can resize images for provider limits and
+  sends an image payload in the provider's expected form. Unsupported file types, damaged data, network
+  restrictions, or server refusals can prevent analysis. A failed upload should not be confused with an
+  empty text-prompt selection.
+
+I4. Custom analysis priorities
+A helpful custom instruction says what to emphasize in an existing picture: lighting, composition,
+  clothing fabric, atmosphere, or the difference between a photo and an illustration. Do not write it as
+  though the feature performs an edit; asking it to 'turn a photograph into watercolor' is different from
+  asking it to describe the photograph faithfully.
+
+I5. Example image-analysis instruction
+'Describe the lighting and background carefully, while preserving the subject's visible appearance and
+  clothing colors.' The purpose is faithful visual description, not creative alteration. You may also
+  write custom analysis instructions in Korean if your selected provider understands that language; review
+  the returned English description rather than assuming every nuance was captured.
+
+I6. Analysis data lifetime
+Closing Image Analysis hides the dialog without canceling an analysis already in progress. The request
+  continues while this page remains open, and its success or failure is available when you reopen the dialog.
+  Reset clears its uploaded image, analysis result and temporary inputs; an active analysis cannot be reset
+  until it finishes. Reloading or closing the browser page may interrupt a request. Saved API keys are separate.
+
+============================================================
+APPENDIX J. OPTIONAL IMAGE PREVIEW AND API COSTS
+============================================================
+
+J1. Separate purposes
+Main Generate = text prompts. Image Analysis = existing image to English description. Optional AI Image
+  Preview = text prompt to an externally generated image. They are independent operations, not a mandatory
+  pipeline. You can use the app entirely without any API key for its main text-generation function.
+
+J2. Preview providers
+OpenAI image preview uses its configured image-generation model. Gemini preview uses a separately
+  configured image-generation model. They are not the same models as OpenAI/Gemini image analysis; each
+  model has its own access rules, quotas, request formats, and costs. Ollama is not used as the app's
+  image-preview generation provider.
+  Downloaded preview images retain their actual PNG, JPEG, or WebP extension, and history saves use the
+  original generating provider rather than a provider selected later.
+
+J3. Billing and cancellation
+Image Analysis continues an in-flight request if you hide its dialog. Optional Image Preview may cancel
+  its local request when closed, but closing a panel or the browser does not guarantee that provider charges
+  are canceled. Check provider billing and quotas. Avoid repeated requests while a paid operation is active.
+
+J4. Keys and storage
+Provider keys may be used only for the current session or saved via the corresponding controls. The same
+  provider key is shared across the analysis and preview functions. Deleting a stored provider key affects
+  both. Do not keep a key inside a publicly shared HTML file or on shared computers. Browser localStorage
+  is useful for convenience but should not be treated as a secure password manager.
+
+J5. Unsupported or expired models
+Service providers may change their model lists and accepted parameters. Updating a model name in source
+  may not be enough if the endpoint or response structure has changed. If an API request fails, inspect
+  the status first: 401/403 can mean authorization, 429 usually means rate limit/quota/billing
+  constraints, and 400 may indicate a bad request or unsupported model parameter.
+
+============================================================
+APPENDIX K. SAVING, RESETTING, AND MOVING BETWEEN COMPUTERS
+============================================================
+
+K1. What Save Settings preserves
+Saved selection snapshots generally include directly fixed items, Ctrl/Command candidate lists, weighted
+  pool states, custom fields, artist references, output format, visual direction, length, result count,
+  and supported view settings. They do not constitute a universal archive of every generated prompt or
+  every API-analysis result.
+
+K2. Bottom Reset
+Bottom Reset reverts the working view to saved settings if available, otherwise to app defaults. It also
+  clears current generated results and temporary working data. It does not intentionally erase stored
+  selection settings, nor does it delete saved OpenAI/Gemini keys.
+
+K3. Reset Saved Settings
+This separate control clears the stored selection snapshot and returns choices to defaults, after a
+  confirmation prompt. It also affects stored artist selections that were part of the snapshot. It does
+  not remove provider API keys; use the key-management controls when you need to delete those.
+
+K4. Why preferences can appear missing
+A browser's localStorage belongs to a browser/origin context. Switching from one browser to another, using
+  private mode, changing file locations, altering security settings, or clearing site data may expose a
+  different store. This does not mean the app deliberately erased a previous selection. Keep a copy of
+  particularly important prompt outputs outside the browser.
+
+K5. Random pool integrity
+The saved representation distinguishes fixed items, multiple candidates, and weighted pool settings. If
+  you save a Full Random configuration and reload it, the pool states should remain the same. If you see
+  unexpectedly fewer active pools, first check whether you reset to an old saved snapshot or changed the
+  visible category. A deliberate fresh randomization can change how many slots are active.
+
+============================================================
+APPENDIX L. PREVIEW EDITING, TRANSLATION, AND TXT EXPORT
+============================================================
+
+L1. The live preview is not the result list
+The preview is a single example of the current selections; Generate creates a list of results. Candidate
+  pools can make the preview differ from any particular result. When you apply a manual edit in preview,
+  that edited text is a user-supplied output and should be treated distinctly from the underlying sampled
+  selection.
+
+L2. Format-specific manual drafts
+Natural Language and Tags can store manual edits separately. If you edit a Natural Language preview and
+  switch to Tags, do not assume the NL prose was automatically rewritten into proper Tags. If the Tag side
+  has no manual override, it may use the original sampled data. Switching back to Natural Language should
+  return the previously applied manual NL draft as long as the underlying selection state remains valid.
+
+L3. Changing the length or direction
+Changing Concise/Standard/Detailed or a broad visual direction is a display/generation-option change
+  rather than an intentional replacement of the user's prose. The app preserves pending edits while
+  switching. Changing actual source selections or loading another preset is a different operation and may
+  invalidate a preview tied to the previous set.
+
+L4. Why exported text has escape sequences
+TXT export uses one physical line for each result. To prevent a manually entered line break from splitting
+  one prompt into multiple entries, a line break inside a prompt is written as literal backslash-n (`\n`).
+  Literal backslashes are preserved, including ComfyUI/Tag weighting syntax such as `\(` and `\)`.
+  For multi-line manually written prompts, the newline is represented by `\n`; this is a one-line
+  export convention, not a lossless serialization of every possible literal `\n` sequence.
+
+L5. A simple import example
+Result 1 as originally typed: `First line` followed by a real newline and `Second line`. In the TXT it
+  appears as one physical line: `First line\nSecond line`. Two separate generated results still occupy two
+  different physical lines, regardless of whether either one contained manual newlines.
+
+L6. Translation behavior
+A translation control may choose Korean-to-English for Korean prose and English-to-Korean for English
+  prose, using mixed-language heuristics. English terms such as `cinematic`, `bokeh`, or `full body`
+  inside a Korean sentence do not automatically mean the prompt is predominantly English. Translation
+  depends on an external network service and can fail without changing the source prompt.
+
+============================================================
+APPENDIX M. TROUBLESHOOTING FIELD CASES
+============================================================
+
+M1. A button looks disabled
+Inspect its tooltip and the selected source conditions. Some options require a compatible subject, count,
+  exposure level, or absence of Background Only mode. A disabled chip is not necessarily a broken button.
+  You may need to select the base gender, count, or relevant main category first.
+
+M2. Full Random appears to ignore direction
+Check whether you had directly fixed a contrasting style. Direction controls automatic style sampling;
+  direct style selections take priority. If the style was auto-selected and you switch direction, the
+  available automatic style choices may be recalculated. Review the actual style-state panel rather than
+  judging only one sentence.
+
+M3. A preset seems to repeat itself
+The preset's fixed anchors are supposed to remain stable. Look at which axes are open to randomness: pose,
+  clothing, environment, lens, lighting, and phrase variants. If you fixed almost everything, a 30-result
+  batch has fewer genuine combinations available. Expand candidates selectively to increase meaningful
+  variety without abandoning the preset identity.
+
+M4. Ollama is running but the list cannot load
+Try `http://localhost:11434/api/tags` on the machine that runs the browser. Then inspect browser
+  Console/Network for CORS or blocked local-network requests. The optional `OLLAMA_ORIGINS` setting can be
+  relevant; unrestricted wildcard use is not recommended on an externally reachable server.
+
+M5. Ollama connects but models are not selectable for analysis
+A text-only completion model cannot receive images. Inspect the installed model's capabilities.
+  `/api/tags` shows installed models but does not prove Vision support; an `/api/show` capability check is
+  more specific. Install a supported Vision model if none is present.
+
+M6. OpenAI or Gemini responds with an error
+Separate authentication failures from quota limits and request incompatibility. Key presence is not
+  equivalent to model entitlement. Image analysis and image preview may have different supported models
+  and charges. Update the provider configuration only after checking the actual error and current account
+  permissions.
+
+M7. A manual prompt vanishes after an unrelated action
+Determine whether you merely changed display format/length/direction or actually changed the
+  selection/preset itself. Format-specific edits are retained for the same selection state; moving to a
+  new selection can invalidate the old preview. Copy any especially important manual prompt to a separate
+  file.
+
+M8. English UI still shows Korean
+First determine whether the Korean string is part of the app interface or content you entered personally.
+  The interface should show English labels in EN mode, but user-supplied Korean text in custom fields or
+  analysis results remains your data and should not be removed. If a built-in error notice remains Korean,
+  note the exact action and error for diagnosis.
+
+============================================================
+APPENDIX N. EXTENDING THE LOCAL HTML SAFELY
+============================================================
+
+N1. Source structure
+This is a standalone HTML application with embedded styles and JavaScript. Selection pools store internal
+  keys and generated-text options. The bilingual layer provides English labels separately from the Korean
+  identifiers. Changing internal keys can disrupt saved settings and the mapping of selected candidates to
+  their prompt phrases.
+
+N2. Editing POOL entries
+Use a UTF-8-capable source editor. Preserve the expected object structure and separate display labels from
+  Natural Language and Tag output values. When adding new fields or choices, confirm they appear in the
+  appropriate compact and full-list views, not just in the source object.
+
+N3. Extending English localization
+A new user-visible label should have an English presentation entry where required. Dynamic tooltips,
+  disabled-choice reasons, modal status text, and errors need accurate meanings rather than generic
+  fallback phrases. Never translate an arbitrary custom user value as though it were application chrome.
+
+N4. Keys, models, and requests
+A local HTML file containing a real API key is not suitable for public distribution. Keep hardcoded keys
+  blank. If the provider changes model IDs, consider endpoint parameters, request payloads, response
+  formats, and error handling together. Do not assume a newer ID accepts the same API contract.
+
+N5. Practical self-checks after customizing
+Reload the HTML; exercise KO and EN; use a fixed item plus Ctrl/Command candidates plus Shift subcategory;
+  save and restore pools; try Natural Language and Tags; generate a normal, Background Only, and adult
+  scenario; check the result count and TXT file; verify a disabled tooltip and a modal; and watch for
+  browser errors. Keep a known-working copy before experimenting.
+
+============================================================
+APPENDIX O. QUICK REFERENCE AND TERMINOLOGY
+============================================================
+
+Fixed item: one explicitly selected ingredient held in the result unless the active scenario cannot display it.
+Multi-candidate set: a user-defined list from which the engine samples one item per result.
+Weighted pool: a category sampled using the application's weighting settings.
+Fill Unselected: populate otherwise empty choices while preserving the current configuration.
+Full Random: create a broad new random configuration across supported categories.
+Preset: a thematic configuration with fixed anchors and randomizable axes, not one static sentence.
+Natural Language: connected English sentence format.
+Tags: comma-separated English descriptor format.
+Visual Direction: automatic preference for Neutral, Photorealistic, or Illustration/Anime style.
+Prompt Length: Concise, Standard, or Detailed; applies to Natural Language, not Tags.
+Preview: one sample based on current selections; may contain a format-specific manual edit.
+Result List: the batch produced by Generate; up to 100 prompts.
+Image Analysis: an uploaded image described as an English prompt through an external or local Vision provider.
+AI Image Preview: optional API-driven rendering of a new image from prompt text; may incur charges.
+Ollama Vision: local Ollama image-understanding model, not the app's preview image generator.
+Bottom Reset: restore saved selections if present; otherwise return to defaults.
+Reset Saved Settings: clear stored selection settings, not provider keys.
+KO/EN: interface language selection; output text remains English.
+
+
+============================================================
+APPENDIX P. FIXED SELECTIONS AND SCENE CONSISTENCY
+============================================================
+
+[Generating with no selection]
+Generate requires at least one selected ingredient or an existing random configuration.
+If nothing is selected, choose an item or click Full Random before generating.
+When all available ingredients are fixed, repeated identical results are expected.
+
+[Explicit seasons and automatic context]
+In ordinary scenes, fixing Spring, Summer, Autumn or Winter lets the app conservatively correct
+certain automatically selected background, time, weather and mood items that explicitly name
+a different season. A fixed winter and an automatically selected early-summer time should not
+appear together. Directly selected seasons, locations, times, weather, outfits and props remain
+as chosen. Clothes and accessories are not categorically banned by season. Custom scenes and
+adult-scene direct selections retain the existing user-choice-first behavior.
+
+[Hair, posture and scene descriptions]
+Explicit pixie and bob cuts encoded in a hair-length choice are retained in Natural Language
+when compatible with another selected hairstyle. Examine unusual combinations manually.
+For multi-person chair/sofa seated settings, default standing wording is not automatically
+added. A directly selected pose is not silently removed even if it appears contradictory.
+
+[Vision API refusals]
+A clearly rejected or safety-blocked vision response is not treated as a valid image-analysis
+prompt. The service's refusal or eligibility rules are controlled by the provider, not this app.
+
+[Output checks]
+Natural Language and Tags need not use identical words. Check the intent of the camera,
+subject count, hairstyles, seasonal context and background in both formats.
+
+END OF ENGLISH USER GUIDE
