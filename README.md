@@ -108,4 +108,4 @@ Workflow: Click **Image Analysis** → choose a provider/model → upload an ima
 | `SHA256SUMS.txt` | File integrity checksums / 파일 무결성 체크섬 |
 | `assets/` | KO/EN and image-analysis screenshots / 한·영 및 이미지 분석 화면 |
 
-**Author:** NiceMan (나이스맨) · **Version:** v8.0.0
+**Author:** Yamoon-jjang · **Version:** v8.0.0
