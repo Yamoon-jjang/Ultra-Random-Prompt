@@ -2,6 +2,8 @@
 
 **한국어 / English** · **One HTML file** · **ComfyUI & other image-generation workflows**
 
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+
 > 이미지 생성용 영문 프롬프트를 빠르게 구성하고, 여러 후보를 조합하며, 참고 이미지를 분석하여 영어 프롬프트로 변환할 수 있는 브라우저 기반 도구입니다.  
 > A bilingual, browser-based prompt composer for a wide range of image-generation workflows, with optional image-to-prompt analysis.
 
@@ -117,6 +119,27 @@ Workflow: Click **Image Analysis** → choose a provider/model → upload an ima
 | `Ultra_random_prompt_v8.0.1_User_Manual_EN.txt` | English detailed guide / 영문 상세 메뉴얼 |
 | `README_KO_EN.txt` | Bilingual text overview / 한·영 텍스트 소개 |
 | `SHA256SUMS.txt` | File integrity checksums / 파일 무결성 체크섬 |
+| `LICENSE` | MIT License / 라이선스 |
 | `assets/` | KO/EN and image-analysis screenshots / 한·영 및 이미지 분석 화면 |
+
+## 📄 라이선스 / License
+
+**한국어**
+
+[MIT License](LICENSE) — 누구나 무료로 사용 · 수정 · 재배포할 수 있으며, 저작권 표시는 유지해야 합니다.
+외부 라이브러리를 포함하지 않는 단일 HTML 앱입니다. 선택 기능(Gemini · OpenAI · Ollama · Google 번역)을 쓸 때는 해당 서비스와 모델의 이용약관 · 라이선스가 적용됩니다.
+
+- 만든 프롬프트와 그 프롬프트로 생성한 이미지의 사용 · 공유 책임은 사용자에게 있습니다.
+- 이 프로그램은 있는 그대로 제공되며, 사용으로 생긴 문제에 대해 제작자는 책임지지 않습니다.
+
+**English**
+
+Released under the [MIT License](LICENSE) — free to use, modify and redistribute, provided the copyright notice is kept.
+A single HTML app with no bundled third-party libraries. Optional features (Gemini, OpenAI, Ollama, Google Translate) are subject to the terms and licenses of those services and models.
+
+- You are responsible for how you use and share the prompts you build and the images generated from them.
+- Provided "as is", without warranty of any kind; the author is not liable for any problems arising from its use.
+
+Copyright (c) 2026 야문 짱 (Yamoon-jjang)
 
 **Author:** Yamoon-jjang · **Version:** v8.0.1
