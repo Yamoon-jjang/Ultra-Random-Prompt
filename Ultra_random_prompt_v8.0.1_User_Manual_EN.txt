@@ -1,7 +1,7 @@
-﻿Ultra Random Prompt v8.0.0
+﻿Ultra Random Prompt v8.0.1
 COMPLETE ENGLISH USER GUIDE
 Author: NiceMan
-Release: v8.0.0 KO/EN bilingual single-file HTML edition
+Release: v8.0.1 KO/EN bilingual single-file HTML edition
 
 ============================================================
 READ THIS FIRST
@@ -25,6 +25,10 @@ This application includes extensive adult/NSFW text-prompt options. Those existi
 
 Do not redistribute an HTML file containing a hard-coded API key. Service providers may bill for API
   calls; a free API key does not necessarily make image generation free.
+
+When you Apply a Custom entry, other selections in that same group remain saved but are replaced in the
+  generated output. Clear the Custom entry to use those ordinary choices again. Automatic scene coherence
+  checks adjust only compatible random choices; explicitly fixed choices remain authoritative.
 
 ============================================================
 TABLE OF CONTENTS
@@ -115,7 +119,7 @@ You can fix individual items, select a limited set of candidates, or ask the app
 02. FIVE-MINUTE QUICK START
 ============================================================
 
-1. Open Ultra_random_prompt_v8.0.0.html in a modern browser.
+1. Open Ultra_random_prompt_v8.0.1.html in a modern browser.
 2. Choose KO or EN in the header.
 3. In Subject, select the subject's adult age, gender, and number of people.
 4. Choose any preferred expression, hair, clothing, pose, or accessories.
@@ -177,7 +181,9 @@ The right panel also contains quick guidance and preset-related information. You
 06. SELECTION STATES AND COLORS
 ============================================================
 
-Unselected items are inactive and may be omitted from the output. A highlighted fixed choice represents a
+Unselected items are generally inactive, but a few baseline subject, expression, gaze, or simple scene
+  details can still be supplied to produce a readable sentence. Unselected does not always mean strictly
+  excluded from every generated phrase. A highlighted fixed choice represents a
   deliberately selected item. Multiple candidates have a visible selection indicator; the generation
   engine picks one of your candidates per result. A green dashed weighted-pool state tells the engine to
   select from the corresponding pool. Disabled options are contextual and cannot be selected in the
@@ -349,8 +355,9 @@ The built-in translation feature is intended to show an English prompt in Korean
   rather than automatically calling the Korean translation service. Switch to KO if you want that
   translation.
 
-The translation endpoint may depend on a third-party service and is not a guaranteed public API. A failed
-  translation should not delete or replace your source prompt.
+The translation feature can transmit the full source prompt, including adult-context text, to an
+  unofficial external Google translation endpoint. Consider privacy before translating sensitive prompts.
+  The endpoint is not a guaranteed public API. A failed translation should not delete or replace your source prompt.
 
 ============================================================
 21. MANUAL PROMPT EDITING
@@ -450,6 +457,13 @@ Use a close-up when eye or facial details matter; use a three-quarter or full-bo
 
 A background such as a night market should not receive automatically sampled bright midday light.
   Time-of-day, weather, and lighting conditions interact.
+
+Automatic events are filtered for clear venue contradictions without forcing all indoor locations to the
+  same activity. A home, gallery, café, cinema, and workshop keep distinct suitable event choices.
+  Explicit lighting or clock choices remain authoritative; when one is fixed, only a conflicting automatic
+  counterpart may change. If both are directly fixed, the program retains your intended combination.
+  The same principle applies to adult candlelight, and seasonal-looking color palettes remain usable as
+  a creative style choice even in a contrasting season.
 
 You may intentionally combine unusual elements, but when letting the application choose automatically, it
   attempts to avoid obvious contradictions. Explicit user selections should not be overruled without a
@@ -1442,5 +1456,65 @@ prompt. The service's refusal or eligibility rules are controlled by the provide
 [Output checks]
 Natural Language and Tags need not use identical words. Check the intent of the camera,
 subject count, hairstyles, seasonal context and background in both formats.
+
+============================================================
+APPENDIX R. DINNER TIME, FIXED EVENTS, ADULT NIGHT LIGHTS, NOON LIGHTING
+============================================================
+
+[Dinner appointments]
+If "Friendly dinner appointment" is automatically sampled or explicitly selected
+while time is automatic, a suitable late-afternoon/sunset/evening time is selected
+rather than morning or noon. Small home parties remain possible in daytime.
+When both event and time are fixed explicitly, neither is overwritten.
+
+[Fixed event with automatic background]
+When an event such as a picnic is fixed and the background is random, the app
+prefers compatible venues from your ENABLED background pool groups only.
+If no compatible venue exists in those groups, the pool restriction and fixed
+selections take priority. The app does not invent or forcibly expand locations.
+Explicitly fixed backgrounds and events are not overwritten.
+
+[Adult moonlight/night venues with daytime]
+Automatic adult moonlight/night-silhouette lights and adult venues explicitly
+named as night settings can be reconciled with a fixed daytime. Explicit adult
+lights, venues and times remain unchanged. An explicitly selected moonlight
+with automatic time can instead guide the automatic time toward night.
+
+[Lighting variety with noon fixed]
+When noon/midday is explicitly fixed and ordinary lighting is automatic,
+compatible lighting is drawn from a broader weighted set rather than always
+choosing the same generic diffuse daylight. Venue, weather and visual style
+compatibility are maintained. Automatic lighting in other random modes now
+also retains any compatible original light and diversifies incompatible
+lighting through weighted scene-aware alternatives. Explicitly fixed lights
+and time slots remain protected.
+Actual images always depend on the downstream model and workflow.
+
+============================================================
+APPENDIX S. VENUE PRECISION, LIGHTING DIVERSITY, RAINY EVENINGS
+============================================================
+
+[Venue-specific event matching]
+The event-to-venue check avoids broad partial-word assumptions:
+a bookstore lounge is not a nightclub; a hotel bathroom is not a
+shopping destination; a yoga studio or studio apartment is not backstage.
+Indoor bathrooms, bedrooms, living rooms and kitchens are distinguished.
+The app never expands your enabled background groups. If your allowed
+pool has no matching venue, or both venue and event are explicitly fixed,
+your choices are retained even if the scene is deliberately unusual.
+
+[Better variety in automatic lights]
+Ordinary and adult (NSFW) lights already compatible with the setting,
+time, weather and style are retained, instead of being replaced with
+the first recommended light. Only unsuitable automatic lights are
+reselected from weighted compatible alternatives. This avoids one-light
+concentration without limiting photo, illustration, painting or adult
+creative choices. Directly fixed lighting remains unchanged.
+
+[Rainy evening and weather]
+When the clock says "Rainy evening" and weather is automatic, the
+weather is adjusted to rain. When clear weather is directly fixed and
+time is automatic, a suitable non-rainy time is selected instead.
+When both are directly fixed, neither is overridden.
 
 END OF ENGLISH USER GUIDE

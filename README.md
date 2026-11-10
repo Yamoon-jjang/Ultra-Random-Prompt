@@ -1,4 +1,4 @@
-# 🎲 Ultra Random Prompt v8.0.0
+# 🎲 Ultra Random Prompt v8.0.1
 
 **한국어 / English** · **One HTML file** · **ComfyUI & other image-generation workflows**
 
@@ -6,6 +6,17 @@
 > A bilingual, browser-based prompt composer for a wide range of image-generation workflows, with optional image-to-prompt analysis.
 
 [🇰🇷 한국어](#-한국어) · [🇬🇧 English](#-english) · [Releases](https://github.com/Yamoon-jjang/Ultra-Random-Prompt/releases)
+
+### 🆕 v8.0.1
+
+- 장면 일관성 개선: 배경·이벤트·시간대·조명·계절의 명백한 모순을 자동값에서만 보정합니다. 직접 고정한 선택은 그대로 유지됩니다.
+- 조명 다양성 개선: 일반·NSFW 조명이 한 종류로 몰리지 않고 장면에 맞는 여러 후보에서 선택됩니다.
+- 이벤트를 고정하면 활성화한 배경 POOL 안에서 어울리는 장소를 고릅니다.
+- 복사 버튼 라벨 고정, TXT 파일명 시각(현지 시간), 저장 설정 보존, 커스텀 적용 안내, EN 화면 번역 누락을 수정했습니다.
+- Scene coherence: clear contradictions between background, event, time, lighting, and season are reconciled for automatic choices only; explicit selections are preserved.
+- Lighting variety: ordinary and adult lighting no longer collapse to a single default.
+- A fixed event now steers a random background toward compatible venues within the enabled pool.
+- Fixes for the copy-button label, local-time TXT filenames, saved-settings retention, custom-input notice, and missing EN UI strings.
 
 ---
 
@@ -40,13 +51,13 @@
 
 ### 🚀 설치 및 사용
 
-1. [Releases](https://github.com/Yamoon-jjang/Ultra-Random-Prompt/releases)에서 `Ultra_random_prompt_v8.0.0_verified_release.zip`을 받습니다.
-2. 압축을 풀고 **`Ultra_random_prompt_v8.0.0.html`**을 Chrome, Edge 등 브라우저에서 엽니다.
+1. [Releases](https://github.com/Yamoon-jjang/Ultra-Random-Prompt/releases)에서 `Ultra_random_prompt_v8.0.1_verified_release.zip`을 받습니다.
+2. 압축을 풀고 **`Ultra_random_prompt_v8.0.1.html`**을 Chrome, Edge 등 브라우저에서 엽니다.
 3. 좌측에서 원하는 항목을 선택하거나 전체 랜덤을 실행합니다.
 4. 출력 형식·방향·길이·생성 개수를 선택한 후 `✨ 생성하기`를 누릅니다.
 5. 결과를 복사하거나 TXT로 저장하여 ComfyUI 등의 프롬프트 입력에 붙여 넣습니다.
 
-**설명서:** [`한글 상세 사용자 메뉴얼`](Ultra_random_prompt_v8.0.0_사용자메뉴얼_KO.txt) · [`English User Manual`](Ultra_random_prompt_v8.0.0_User_Manual_EN.txt)
+**설명서:** [`한글 상세 사용자 메뉴얼`](Ultra_random_prompt_v8.0.1_사용자메뉴얼_KO.txt) · [`English User Manual`](Ultra_random_prompt_v8.0.1_User_Manual_EN.txt)
 
 **주의:** 생성 버튼의 기본 결과는 이미지가 아닌 텍스트입니다. 선택적 AI 이미지 미리보기는 OpenAI/Gemini API를 사용하며 비용이 발생할 수 있습니다. API 키가 들어간 HTML 파일을 공개 공유하지 마세요. 저장한 키는 브라우저 localStorage에 보관될 수 있으므로 공용 컴퓨터에서는 주의하세요. 로컬 Ollama 연결은 브라우저 보안·CORS 설정의 영향을 받을 수 있습니다.
 
@@ -85,13 +96,13 @@ Workflow: Click **Image Analysis** → choose a provider/model → upload an ima
 
 ### 🚀 Quick start
 
-1. Download `Ultra_random_prompt_v8.0.0_verified_release.zip` from [Releases](https://github.com/Yamoon-jjang/Ultra-Random-Prompt/releases).
-2. Extract the archive and open **`Ultra_random_prompt_v8.0.0.html`** in a modern desktop or mobile browser.
+1. Download `Ultra_random_prompt_v8.0.1_verified_release.zip` from [Releases](https://github.com/Yamoon-jjang/Ultra-Random-Prompt/releases).
+2. Extract the archive and open **`Ultra_random_prompt_v8.0.1.html`** in a modern desktop or mobile browser.
 3. Select ingredients in the left panel, or choose **Full Random** for a fresh composition.
 4. Configure output format, visual direction, prompt length, and number of results.
 5. Click **Generate**, then copy or export the prompts for your preferred image-generation workflow.
 
-**Full documentation:** [`English User Manual`](Ultra_random_prompt_v8.0.0_User_Manual_EN.txt) · [`한글 메뉴얼`](Ultra_random_prompt_v8.0.0_사용자메뉴얼_KO.txt)
+**Full documentation:** [`English User Manual`](Ultra_random_prompt_v8.0.1_User_Manual_EN.txt) · [`한글 메뉴얼`](Ultra_random_prompt_v8.0.1_사용자메뉴얼_KO.txt)
 
 **Important:** This app primarily generates prompt text, not images. Optional AI Image Preview requests use OpenAI/Gemini services and may incur fees. Do not distribute copies of the HTML with API keys embedded. Saved provider keys may reside in your browser's localStorage; avoid saving them on shared computers. Local Ollama access can depend on browser CORS and local-network rules.
 
@@ -101,11 +112,11 @@ Workflow: Click **Image Analysis** → choose a provider/model → upload an ima
 
 | File | Purpose |
 |---|---|
-| `Ultra_random_prompt_v8.0.0.html` | Standalone HTML app / 단일 HTML 앱 |
-| `Ultra_random_prompt_v8.0.0_사용자메뉴얼_KO.txt` | Korean detailed guide / 한글 상세 메뉴얼 |
-| `Ultra_random_prompt_v8.0.0_User_Manual_EN.txt` | English detailed guide / 영문 상세 메뉴얼 |
+| `Ultra_random_prompt_v8.0.1.html` | Standalone HTML app / 단일 HTML 앱 |
+| `Ultra_random_prompt_v8.0.1_사용자메뉴얼_KO.txt` | Korean detailed guide / 한글 상세 메뉴얼 |
+| `Ultra_random_prompt_v8.0.1_User_Manual_EN.txt` | English detailed guide / 영문 상세 메뉴얼 |
 | `README_KO_EN.txt` | Bilingual text overview / 한·영 텍스트 소개 |
 | `SHA256SUMS.txt` | File integrity checksums / 파일 무결성 체크섬 |
 | `assets/` | KO/EN and image-analysis screenshots / 한·영 및 이미지 분석 화면 |
 
-**Author:** Yamoon-jjang · **Version:** v8.0.0
+**Author:** Yamoon-jjang · **Version:** v8.0.1
